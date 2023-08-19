@@ -1,21 +1,34 @@
-function sendMail(params){
-    var tempParams = {
-        from_name: document.getElementById("fromName").value,
-        email_sender: document.getElementById("emailSender").value,
-        subject_sender: document.getElementById("subjectSender").value,
-        message_sender: document.getElementById("message").value,
-    };
-    emailjs.send('{{SERVICE ID}}','{{TEMPLATE ID}}',tempParams)
-     .then(function(res){
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Mail Sent Successfully!',
-            showConfirmButton: false,
-            timer: 1500,
-          });
-     });
+// Get input values directly
+var fromName = document.getElementById("fromName");
+var emailSender = document.getElementById("emailSender");
+var subjectSender = document.getElementById("subjectSender");
+var messageSender = document.getElementById("message");
+
+
+
+
+
+function openGmail() {
+    // Validate input (add your own validation logic)
+    if (fromName.value && emailSender.value && subjectSender.value && messageSender.value) {
+        var recipient = encodeURIComponent("jamcav097@gmail.com");
+        var name = fromName.value;
+        var subject = subjectSender.value;
+        var subjectMatter = encodeURIComponent(subject);
+        var message = messageSender.value;
+        var content = 'Hello, my name is ' +name +'. '+ message;
+        alert(content);
+        var body = encodeURIComponent(content);
+    
+        var gmailURL = 'https://mail.google.com/mail/?view=cm&fs=1&to='+recipient+'&su='+subjectMatter+'&body='+body;
+    
+        // Open the Gmail compose window in a new tab
+        window.open(gmailURL, "_blank");
+    } else{
+        alert("Please fill in all fields.");
+    }
 }
+
 
 $(document).ready(function () {
     $(window).scroll(function () {
