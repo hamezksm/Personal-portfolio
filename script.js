@@ -1,5 +1,6 @@
 // Get input values directly
-var fromName = document.getElementById("fromName");
+var firstName = document.getElementsByClassName("firstName");
+var secondName = document.getElementsByClassName("secondName");
 var emailSender = document.getElementById("emailSender");
 var subjectSender = document.getElementById("subjectSender");
 var messageSender = document.getElementById("message");
@@ -10,9 +11,11 @@ var messageSender = document.getElementById("message");
 
 function openGmail() {
     // Validate input (add your own validation logic)
-    if (fromName.value && emailSender.value && subjectSender.value && messageSender.value) {
+    if (firstName.value && secondName.value && subjectSender.value && messageSender.value) {
         var recipient = encodeURIComponent("jamcav097@gmail.com");
-        var name = fromName.value;
+        var fname = firstName.value;
+        var sname = secondName.value;
+        var name = fname + " " + sname;
         var subject = subjectSender.value;
         var subjectMatter = encodeURIComponent(subject);
         var message = messageSender.value;
