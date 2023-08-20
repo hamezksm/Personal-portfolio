@@ -510,11 +510,11 @@ section .title::after{
    width: 100%;
 
 }
-.contact .right form .name{
+.contact .right form .fname{
     margin-right: 10px;
 }
 
-.contact .right form .email{
+.contact .right form .sname{
     margin-left: 10px;
 }
 

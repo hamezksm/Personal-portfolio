@@ -1,26 +1,21 @@
+function openGmail() {
+
 // Get input values directly
-var firstName = document.getElementsByClassName("firstName");
-var secondName = document.getElementsByClassName("secondName");
-var emailSender = document.getElementById("emailSender");
+var firstName = document.querySelector(".first");
+var secondName = document.querySelector(".second");
 var subjectSender = document.getElementById("subjectSender");
 var messageSender = document.getElementById("message");
+var fname = firstName.value;
+var sname = secondName.value;
+var subject = subjectSender.value;
+var message = messageSender.value;
 
-
-
-
-
-function openGmail() {
     // Validate input (add your own validation logic)
-    if (firstName.value && secondName.value && subjectSender.value && messageSender.value) {
+    if (fname && sname && subject && message) {
         var recipient = encodeURIComponent("jamcav097@gmail.com");
-        var fname = firstName.value;
-        var sname = secondName.value;
         var name = fname + " " + sname;
-        var subject = subjectSender.value;
         var subjectMatter = encodeURIComponent(subject);
-        var message = messageSender.value;
-        var content = 'Hello, my name is ' +name +'. '+ message;
-        alert(content);
+        var content = 'Hello, my name is ' +name +'. '+ message+'......From portfolio';
         var body = encodeURIComponent(content);
     
         var gmailURL = 'https://mail.google.com/mail/?view=cm&fs=1&to='+recipient+'&su='+subjectMatter+'&body='+body;
