@@ -1,496 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>James Opondo</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>James Opondo</title>
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- FAVICON -->
-    <link
-      class="favicon"
-      rel="icon"
-      type="image/img"
-      sizes="32x32"
-      href="images/icons8-developer-48.png"
-    />
+        <!-- FAVICON -->
+        <link
+            class="favicon"
+            rel="icon"
+            type="image/img"
+            sizes="32x32"
+            href="images/icons8-developer-48.png"
+        />
 
-    <!-- Google material icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+        <!-- Google material icons -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/style.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="/style.css" />
 
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+        <!-- FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
 
-    <!-- TYPE JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-      integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+        <!-- TYPE JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+            integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
 
-    <!-- jQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
+        <!-- jQUERY -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-      <div class="max-width">
-        <div class="logo">
-          <a href="#">My<span> Personal Portfolio</span></a>
-        </div>
-        <ul class="menu">
-          <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#about" class="menu-btn">About</a></li>
-          <li><a href="#services" class="menu-btn">Services</a></li>
-          <li><a href="#skills" class="menu-btn">Skills</a></li>
-          <li><a href="#contact" class="menu-btn">Contact</a></li>
-        </ul>
-        <div class="menu-btn">
-          <i class="material-icons">menu</i>
-        </div>
-      </div>
-    </nav>
-    <!-- Scroll to top button -->
-    <button id="btnScrollToTop">
-      <i class="material-icons">arrow_upward</i>
-    </button>
-
-    <!-- home section start-->
-    <section class="home" id="home">
-      <div class="max-width">
-        <div class="home-content">
-          <div class="text-1" data-aos="fade-up">Hello, my name is</div>
-          <div class="text-2">JAMES OPONDO</div>
-          <div class="text-3">I <span class="typing"></span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section -->
-    <section class="about" id="about">
-      <div class="max-width">
-        <h2 class="title" data-aos="fade-down">About Me</h2>
-        <div class="about-content">
-          <div class="column left" data-aos="fade-right">
-            <img src="images/Snapchat-134549343.jpg" alt="" />
-          </div>
-          <div class="column right" data-aos="fade-up">
-            <div class="text">
-              I am James and I <span class="typing-2"></span>
+    <body>
+        <nav class="navbar">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
             </div>
-            <p class="paragraph">
-              I am live in Nairobi, Kenya. I started my software engineer
-              journey in 2020 and I really loved the experience of actually
-              making this and seeing the work. I would love to make a change to
-              the world through technology as it is the basis of the new era of
-              human revolution. Besides coding, love hiking a lot and going out
-              on Adventures. I also do nature photography. You can also tell I
-              love sunsets and riding bicycles. Cheers!
-            </p>
-            <a href="documents/cv.pdf" download="James-Opondo-CV.pdf">
-              Download Resume
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-      <div class="max-width">
-        <h2 class="title" data-aos="fade-down">My Services</h2>
-        <div class="serv-content">
-          <div class="card" data-aos="flip-left">
-            <div class="box">
-              <i class="fas fa-mobile-alt"></i>
-              <div class="text">Flutter Development</div>
-              <p>
-                I am very proficient in Flutter development using Dart. I have
-                been using practising on this field since the beginning of 2023.
-                As I interacted with the language and the framework I came to
-                learn and use Firestore and Firebase as backend for mobile
-                applications. I have also understood application state
-                management using tools like Providers. Some of the projects are
-                available on my Github repository.
-              </p>
-            </div>
-          </div>
-
-          <div class="card" data-aos="flip-left">
-            <div class="box">
-              <i class="fas fa-server"></i>
-              <div class="text">Backend using Python and Golang</div>
-              <p>
-                I have been using Django and Flask framework from Python since
-                2020 from models to create restful and graphql APIs. It is very
-                interesting and fun to learn. I have made projects like an
-                E-commerce website, Todo list , blogging website and real-time
-                chat applications, corporate airtime disbursement system and an
-                international money remittance platform. More projects are
-                available on my repository
-              </p>
-            </div>
-          </div>
-
-          <div class="card" data-aos="flip-left">
-            <div class="box">
-              <i class="fas fa-code"></i>
-              <div class="text">Web Development using React and Next.js</div>
-              <p>
-                I have experience in Web development since 2021 through making a
-                number of projects including an international money remittance
-                platform, a corporate airtime disbursement system, a blogging
-                website, a Saas for enabling people to summarize their documents
-                using AI. I have also integrated payment gateways like Stripe
-                and Paypal in my projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- skills section services -->
-    <section class="skills" id="skills">
-      <div class="max-width" data-aos="fade-down">
-        <h2 class="title" data-aos="fade-up">My Skills</h2>
-        <div class="skills-content">
-          <div class="column left">
-            <div class="text">My creative skills & experiences.</div>
-            <p class="paragraph-2">
-              I have picked up a lot of skill in my journey as a developer. I
-              have used the all but not limited to the tools and programming
-              languages as shown to make softwares for startups, contracts,
-              hackathons, personal projects, class projects and group projects.
-              These projects have enhanced my problem solving skills and deeper
-              understanding of data structure and algorithms. I have also learnt
-              how to use different software development methodologies
-            </p>
-            <a href="#about">Read More</a>
-          </div>
-          <div class="column right skill-box">
-            <div class="icons">
-              <img
-                src="images\skill-icons\icons8-react.svg"
-                title="html"
-                alt="html"
-                id="html-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-tailwindcss.svg"
-                title="css"
-                alt="css"
-                id="css-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-javascript.svg"
-                title="javascript"
-                alt="js"
-                id="js-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-typescript.svg"
-                title="typescript"
-                alt="ts"
-                id="ts-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-nextjs.svg"
-                title="next-js"
-                alt="next-js"
-                id="next-js-icon"
-                data-aos="flip-left"
-              />
-            </div>
-            <div class="icons">
-              <img
-                src="images\skill-icons\icons8-python.svg"
-                title="python"
-                alt="python"
-                id="python-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-data-science-64.png"
-                title="data science"
-                alt="data science"
-                id="data-science-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-django.svg"
-                title="django"
-                alt="django"
-                id="django-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-flask.svg"
-                title="flask"
-                alt="flask"
-                id="flask-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-go-logo.svg"
-                title="golang"
-                alt="golang"
-                id="golang-icon"
-                data-aos="flip-left"
-              />
-            </div>
-            <div class="icons">
-              <img
-                src="images\skill-icons\icons8-dart.svg"
-                title="dart"
-                alt="dart"
-                id="dart-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-flutter.svg"
-                title="flutter"
-                alt="flutter"
-                id="flutter-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-kotlin.svg"
-                title="kotlin"
-                alt="kotlin"
-                id="kotlin-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-aws.svg"
-                title="aws"
-                alt="aws"
-                id="aws-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-firebase.svg"
-                title="firebase"
-                alt="firebase"
-                id="firebase-icon"
-                data-aos="flip-left"
-              />
-            </div>
-            <div class="icons">
-              <img
-                src="images\skill-icons\icons8-mysql.svg"
-                title="mysql"
-                alt="mysql"
-                id="mysql-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-postgres.svg"
-                title="dart"
-                alt="dart"
-                id="dart-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-iot-64.png"
-                title="iot"
-                alt="iot"
-                id="iot-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-docker-48.png"
-                title="docker"
-                alt="docker"
-                id="docker-icon"
-                data-aos="flip-left"
-              />
-              <img
-                src="images\skill-icons\icons8-kubernetes.svg"
-                title="kubernetes"
-                alt="kubernetes"
-                id="kubernetes-icon"
-                data-aos="flip-left"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="max-width">
-        <h2 class="title" data-aos="fade-down">Contact Me</h2>
-        <div class="contact-content">
-          <div class="column left" data-aos="flip-left">
-            <div class="text">Let's Get in Touch</div>
-            <p class="paragraph-3">
-              To get in touch with me, you can reach out to me through my email
-              and linkedin. You can also leave a message right here.
-            </p>
-            <div class="icons">
-              <div class="row">
-                <i class="fas fa-user"></i>
-                <div class="info">
-                  <div class="head">Name</div>
-                  <div
-                    class="sub-title"
-                    style="color: rgb(182, 170, 67); font-size: larger"
-                  >
-                    James Opondo
-                  </div>
+            <div class="max-width">
+                <div class="logo">
+                    <a href="#">My<span> Personal Portfolio</span></a>
                 </div>
-              </div>
-              <div class="row">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info">
-                  <div class="head">Address</div>
-                  <div
-                    class="sub-title"
-                    style="color: rgb(182, 170, 67); font-size: larger"
-                  >
-                    Nairobi, Kenya
-                  </div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#services" class="menu-btn">Services</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="material-icons">menu</i>
                 </div>
-              </div>
-              <div class="row">
-                <i class="fas fa-envelope"></i>
-                <div class="info">
-                  <div class="head">Email</div>
-                  <div
-                    class="sub-title"
-                    style="color: rgb(182, 170, 67); font-size: larger"
-                  >
-                    jamcav097@gmail.com
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="column right" data-aos="flip-right">
-            <div class="text">Message Me</div>
-            <form action="#Contact">
-              <div class="fields">
-                <div class="field fname">
-                  <input
-                    type="text"
-                    class="first"
-                    id="fromName"
-                    placeholder=" First Name"
-                    required
-                    autocomplete="off"
-                  />
-                </div>
-                <div class="field sname">
-                  <input
-                    type="text"
-                    class="second"
-                    id="fromName"
-                    placeholder="Second Name"
-                    required
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
-              <div class="field">
-                <input
-                  type="text"
-                  id="subjectSender"
-                  placeholder="Subject"
-                  required
-                  autocomplete="off"
-                />
-              </div>
-              <div class="field textarea">
-                <textarea
-                  cols="30"
-                  rows="10"
-                  id="message"
-                  placeholder="Message"
-                  required
-                  autocomplete="off"
-                ></textarea>
-              </div>
-              <div class="button">
-                <button onclick="openGmail()" type="submit">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer section start -->
-    <footer>
-      <div class="header-socials">
-        <a
-          href="https://www.linkedin.com/in/james-opondo-ab0030200/"
-          target="_blank"
-          ><i class="fab fa-linkedin" title="linkedin"></i
-        ></a>
-        <a href="https://github.com/hamezksm/" target="_blank"
-          ><i class="fab fa-github" title="github.com"></i
-        ></a>
-        <a
-          href="https://twitter.com/hamza2k02?t=raVDEQ3IVnRtZp4tBYOgTA&s=08"
-          target="_blank"
-          ><i class="fab fa-twitter" title="twitter"></i
-        ></a>
-      </div>
+        </nav>
+        <!-- Scroll to top button -->
+        <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+        </button>
 
-      <div class="text-center">
-        <span>
-          Created By <a href="#">Hamez</a> |
-          <span class="far fa-copyright"> </span>
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          All rights reserved.
-        </span>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-    <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function () {
-        myFunction();
-      };
+        <!-- home section start-->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1" data-aos="fade-up">
+                        Hello, my name is
+                    </div>
+                    <div class="text-2">JAMES OPONDO</div>
+                    <div class="text-3">I <span class="typing"></span></div>
+                </div>
+            </div>
+        </section>
 
-      function myFunction() {
-        var winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        var height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-      }
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ easing: "ease-in", delay: 100, duration: 300, offset: 100 });
-      window.addEventListener("load", AOS.refresh);
-    </script>
-  </body>
+        <!-- about section -->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title" data-aos="fade-down">About Me</h2>
+                <div class="about-content">
+                    <div class="column left" data-aos="fade-right">
+                        <img
+                            src="https://media.licdn.com/dms/image/v2/D4D03AQEv4KABZWA0Vg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719026792440?e=1758153600&v=beta&t=pS6zND_F2332lV45D6IFVgwCwCnNn9-SimDcC4yPkSE"
+                            alt=""
+                        />
+                    </div>
+                    <div class="column right" data-aos="fade-up">
+                        <div class="text">
+                            I am James and I <span class="typing-2"></span>
+                        </div>
+                        <p class="paragraph">
+                            I am live in Nairobi, Kenya. I started my software
+                            engineer journey in 2020 and I really loved the
+                            experience of actually making this and seeing the
+                            work. I would love to make a change to the world
+                            through technology as it is the basis of the new era
+                            of human revolution. Besides coding, love hiking a
+                            lot and going out on Adventures. I also do nature
+                            photography. You can also tell I love sunsets and
+                            riding bicycles. Cheers!
+                        </p>
+                        <a href="documents/cv.pdf" download="cv.pdf">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="max-width">
+                <h2 class="title" data-aos="fade-down">My Services</h2>
+                <div class="serv-content">
+                    <div class="card" data-aos="flip-left">
+                        <div class="box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="text">Flutter Development</div>
+                            <p>
+                                I am very proficient in Flutter development
+                                using Dart. I have been using practising on this
+                                field since the beginning of 2023. As I
+                                interacted with the language and the framework I
+                                came to learn and use Firestore and Firebase as
+                                backend for mobile applications. I have also
+                                understood application state management using
+                                tools like Providers. Some of the projects are
+                                available on my Github repository.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="flip-left">
+                        <div class="box">
+                            <i class="fas fa-server"></i>
+                            <div class="text">
+                                Backend using Python and Golang
+                            </div>
+                            <p>
+                                I have been using Django and Flask framework
+                                from Python since 2020 from models to create
+                                restful and graphql APIs. It is very interesting
+                                and fun to learn. I have made projects like an
+                                E-commerce website, Todo list , blogging website
+                                and real-time chat applications, corporate
+                                airtime disbursement system and an international
+                                money remittance platform. More projects are
+                                available on my repository
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="flip-left">
+                        <div class="box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">
+                                Web Development using React and Next.js
+                            </div>
+                            <p>
+                                I have experience in Web development since 2021
+                                through making a number of projects including an
+                                international money remittance platform, a
+                                corporate airtime disbursement system, a
+                                blogging website, a Saas for enabling people to
+                                summarize their documents using AI. I have also
+                                integrated payment gateways like Stripe and
+                                Paypal in my projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section services -->
+        <section class="skills" id="skills">
+            <div class="max-width" data-aos="fade-down">
+                <h2 class="title" data-aos="fade-up">My Skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">
+                            My creative skills & experiences.
+                        </div>
+                        <p class="paragraph-2">
+                            I have picked up a lot of skill in my journey as a
+                            developer. I have used the all but not limited to
+                            the tools and programming languages as shown to make
+                            softwares for startups, contracts, hackathons,
+                            personal projects, class projects and group
+                            projects. These projects have enhanced my problem
+                            solving skills and deeper understanding of data
+                            structure and algorithms. I have also learnt how to
+                            use different software development methodologies
+                        </p>
+                        <a href="#about">Read More</a>
+                    </div>
+                    <div class="column right skill-box">
+                        <div class="icons">
+                            <img
+                                src="images\skill-icons\icons8-react.svg"
+                                title="html"
+                                alt="html"
+                                id="html-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-tailwindcss.svg"
+                                title="css"
+                                alt="css"
+                                id="css-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-javascript.svg"
+                                title="javascript"
+                                alt="js"
+                                id="js-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-typescript.svg"
+                                title="typescript"
+                                alt="ts"
+                                id="ts-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-nextjs.svg"
+                                title="next-js"
+                                alt="next-js"
+                                id="next-js-icon"
+                                data-aos="flip-left"
+                            />
+                        </div>
+                        <div class="icons">
+                            <img
+                                src="images\skill-icons\icons8-python.svg"
+                                title="python"
+                                alt="python"
+                                id="python-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-data-science-64.png"
+                                title="data science"
+                                alt="data science"
+                                id="data-science-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-django.svg"
+                                title="django"
+                                alt="django"
+                                id="django-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-flask.svg"
+                                title="flask"
+                                alt="flask"
+                                id="flask-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-go-logo.svg"
+                                title="golang"
+                                alt="golang"
+                                id="golang-icon"
+                                data-aos="flip-left"
+                            />
+                        </div>
+                        <div class="icons">
+                            <img
+                                src="images\skill-icons\icons8-dart.svg"
+                                title="dart"
+                                alt="dart"
+                                id="dart-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-flutter.svg"
+                                title="flutter"
+                                alt="flutter"
+                                id="flutter-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-kotlin.svg"
+                                title="kotlin"
+                                alt="kotlin"
+                                id="kotlin-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-aws.svg"
+                                title="aws"
+                                alt="aws"
+                                id="aws-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-firebase.svg"
+                                title="firebase"
+                                alt="firebase"
+                                id="firebase-icon"
+                                data-aos="flip-left"
+                            />
+                        </div>
+                        <div class="icons">
+                            <img
+                                src="images\skill-icons\icons8-mysql.svg"
+                                title="mysql"
+                                alt="mysql"
+                                id="mysql-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-postgres.svg"
+                                title="dart"
+                                alt="dart"
+                                id="dart-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-iot-64.png"
+                                title="iot"
+                                alt="iot"
+                                id="iot-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-docker-48.png"
+                                title="docker"
+                                alt="docker"
+                                id="docker-icon"
+                                data-aos="flip-left"
+                            />
+                            <img
+                                src="images\skill-icons\icons8-kubernetes.svg"
+                                title="kubernetes"
+                                alt="kubernetes"
+                                id="kubernetes-icon"
+                                data-aos="flip-left"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title" data-aos="fade-down">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="column left" data-aos="flip-left">
+                        <div class="text">Let's Get in Touch</div>
+                        <p class="paragraph-3">
+                            To get in touch with me, you can reach out to me
+                            through my email and linkedin. You can also leave a
+                            message right here.
+                        </p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div
+                                        class="sub-title"
+                                        style="
+                                            color: rgb(182, 170, 67);
+                                            font-size: larger;
+                                        "
+                                    >
+                                        James Opondo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div
+                                        class="sub-title"
+                                        style="
+                                            color: rgb(182, 170, 67);
+                                            font-size: larger;
+                                        "
+                                    >
+                                        Nairobi, Kenya
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div
+                                        class="sub-title"
+                                        style="
+                                            color: rgb(182, 170, 67);
+                                            font-size: larger;
+                                        "
+                                    >
+                                        jamcav097@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right" data-aos="flip-right">
+                        <div class="text">Message Me</div>
+                        <form action="#Contact">
+                            <div class="fields">
+                                <div class="field fname">
+                                    <input
+                                        type="text"
+                                        class="first"
+                                        id="fromName"
+                                        placeholder=" First Name"
+                                        required
+                                        autocomplete="off"
+                                    />
+                                </div>
+                                <div class="field sname">
+                                    <input
+                                        type="text"
+                                        class="second"
+                                        id="fromName"
+                                        placeholder="Second Name"
+                                        required
+                                        autocomplete="off"
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input
+                                    type="text"
+                                    id="subjectSender"
+                                    placeholder="Subject"
+                                    required
+                                    autocomplete="off"
+                                />
+                            </div>
+                            <div class="field textarea">
+                                <textarea
+                                    cols="30"
+                                    rows="10"
+                                    id="message"
+                                    placeholder="Message"
+                                    required
+                                    autocomplete="off"
+                                ></textarea>
+                            </div>
+                            <div class="button">
+                                <button onclick="openGmail()" type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section start -->
+        <footer>
+            <div class="header-socials">
+                <a
+                    href="https://www.linkedin.com/in/james-opondo-ab0030200/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin" title="linkedin"></i
+                ></a>
+                <a href="https://github.com/hamezksm/" target="_blank"
+                    ><i class="fab fa-github" title="github.com"></i
+                ></a>
+                <a
+                    href="https://twitter.com/hamza2k02?t=raVDEQ3IVnRtZp4tBYOgTA&s=08"
+                    target="_blank"
+                    ><i class="fab fa-twitter" title="twitter"></i
+                ></a>
+            </div>
+
+            <div class="text-center">
+                <span>
+                    Created By <a href="#">Hamez</a> |
+                    <span class="far fa-copyright"> </span>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved.
+                </span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () {
+                myFunction();
+            };
+
+            function myFunction() {
+                var winScroll =
+                    document.body.scrollTop ||
+                    document.documentElement.scrollTop;
+                var height =
+                    document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                easing: "ease-in",
+                delay: 100,
+                duration: 300,
+                offset: 100,
+            });
+            window.addEventListener("load", AOS.refresh);
+        </script>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src =
+                    "https://embed.tawk.to/6877f17190f2ce19142051da/1j0a8e9br";
+                s1.charset = "UTF-8";
+                s1.setAttribute("crossorigin", "*");
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </body>
 </html>
